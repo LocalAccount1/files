@@ -9,7 +9,7 @@ on:
 jobs:
   pre-release:
     name: "Update"
-    runs-on: "updatepdffiles"
+    runs-on: "ubuntu-latest"
 
     steps:
       # ...
