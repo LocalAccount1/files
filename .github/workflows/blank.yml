@@ -4,7 +4,7 @@ name: "tagged-release"
 on:
   push:
     tags:
-      - "l"
+      - "l*"
 
 jobs:
   tagged-release:
@@ -23,4 +23,3 @@ jobs:
           prerelease: false
           files: |
             *.pdf
-            *.*
