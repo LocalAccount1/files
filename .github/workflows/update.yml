@@ -39,9 +39,9 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: true
           title: "Development Build"
-          files: |
-          :*.pdf
-          :*.*
+          files: 
+          *.pdf
+          *.*
         id: "automatic_releases"
 
       # marvinpinto/action-keybase-notifications
