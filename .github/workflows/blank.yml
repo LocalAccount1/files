@@ -1,14 +1,14 @@
 ---
-name: "pre-release"
+name: "tagged-release"
 
 on:
   push:
-    branches:
-      - "master"
+    tags:
+      - "*"
 
 jobs:
-  pre-release:
-    name: "Update"
+  tagged-release:
+    name: "Tagged Release"
     runs-on: "ubuntu-latest"
 
     steps:
@@ -20,9 +20,7 @@ jobs:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
           prerelease: false
-          title: "update"
           files: |
-          *.pdf
-.gitattributes
+            *.pdf
+            *.*
