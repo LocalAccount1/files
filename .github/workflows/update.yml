@@ -25,4 +25,4 @@ jobs:
           prerelease: false
           title: "Development Build"
           files: |
-          files/*.pdf
+*.jar
