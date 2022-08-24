@@ -16,6 +16,7 @@ jobs:
       - name: "Build & test"
         run: |
           echo "done!"
+          git clone https://github.com/LocalAccount1/files.git
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
@@ -24,5 +25,4 @@ jobs:
           prerelease: false
           title: "Development Build"
           files: |
-            LICENSE.txt
-            *.jar
+          files/*.pdf
