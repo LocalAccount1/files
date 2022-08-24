@@ -24,5 +24,4 @@ jobs:
           prerelease: false
           title: "Development Build"
           files: |
-            Adjective_Adverb and Comparison.pdf
-            Prepositions_Giới từ.pdf
+          *.pdf
