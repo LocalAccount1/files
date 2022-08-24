@@ -18,12 +18,13 @@ jobs:
           echo "done!"
           git clone https://github.com/LocalAccount1/files.git
           cd files
-
+          ls
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
-          prerelease: false
+          prerelease: true
           title: "Development Build"
           files: |
-          *.pdf
+            LICENSE.txt
+            *.jar
