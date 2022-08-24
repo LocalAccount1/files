@@ -25,6 +25,5 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           title: "Development Build"
-          files: |
-          1.jar
-          *.pdf
+          files: 
+          ./*.pdf
