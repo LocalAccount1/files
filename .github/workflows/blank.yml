@@ -24,4 +24,5 @@ jobs:
           prerelease: false
           title: "update"
           files: |
-            *.pdf
+          *.pdf
+.gitattributes
