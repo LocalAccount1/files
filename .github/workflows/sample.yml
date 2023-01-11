@@ -1,7 +1,11 @@
+---
+name: "pre-release"
+
 on:
   push:
-    branches:master
-    
+    branches:
+      - "master"
+
 steps:
 - uses: actions/checkout@v2
 
