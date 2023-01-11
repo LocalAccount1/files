@@ -26,5 +26,4 @@ jobs:
           automatic_release_tag: "sdakjsldkfj"
           prerelease: false
           title: "Development Build"
-          files: |
-          *.pdf
+          files: "*.pdf"
