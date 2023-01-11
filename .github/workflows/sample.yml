@@ -1,14 +1,14 @@
 ---
-name: "tagged-release"
+name: "pre-release"
 
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - "master"
 
 jobs:
-  tagged-release:
-    name: "Tagged Release"
+  pre-release:
+    name: "Pre Release"
     runs-on: "ubuntu-latest"
 
     steps:
@@ -20,5 +20,7 @@ jobs:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
           prerelease: false
+          title: "Development Build"
           files: Prepositions_of_Places.pdf
