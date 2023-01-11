@@ -1,26 +1,15 @@
----
-name: "pre-release"
+steps:
+- uses: actions/checkout@v2
 
-on:
-  push:
-    branches:
-      - "master"
-
-jobs:
-  pre-release:
-    name: "Pre Release"
-    runs-on: "ubuntu-latest"
-
-    steps:
-      # ...
-      - name: "Build & test"
-        run: |
-          echo "done!"
-
-      - uses: "marvinpinto/action-automatic-releases@v1.2.1"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "sdakjsldkfj"
-          prerelease: false
-          title: "Development Build"
-          files: "*.pdf"
+- uses: meeDamian/github-release@2.0
+  with:
+    token: ${{ secrets.GITHUB_TOKEN }}
+    tag: ${{ env.hatethisplatform }}
+    name: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa i hate github actions
+    body: >
+      This release actually changes the fabric of the reality, so be careful 
+      while applying, as error in database migration, can irrecoverably wipe 
+      some laws of physics.  
+    gzip: folders
+    files: >
+      1.jar
