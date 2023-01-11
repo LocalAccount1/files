@@ -23,4 +23,4 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           title: "Development Build"
-          files: Prepositions_Giới từ.pdf
+          files: "Prepositions_Giới từ.pdf"
