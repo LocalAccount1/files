@@ -5,16 +5,12 @@ on:
   push:
     branches:
       - "master"
-
 jobs:
   pre-release:
     name: "Pre Release"
     runs-on: "ubuntu-latest"
-
-
 steps:
 - uses: actions/checkout@v2
-
 - uses: meeDamian/github-release@2.0
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
@@ -26,4 +22,4 @@ steps:
       some laws of physics.  
     gzip: folders
     files: >
-      1.jar
+      **/
